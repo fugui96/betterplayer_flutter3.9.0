@@ -18,7 +18,6 @@ class DrmInitData {
     return false;
   }
 
-  // todo: 123132
   @override
-  int get hashCode => hashValues(schemeType, schemeData);
+  int get hashCode => Object.hash(schemeType, schemeData);
 }
